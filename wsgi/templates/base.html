@@ -8,15 +8,11 @@
   <link href='//fonts.googleapis.com/css?family=Arvo|Merriweather' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-  <script type="text/javascript">
-    updateCountdown = function() {
-      var cd = countdown( new Date(2014, 2, 18) ).toString();
-      $(".countdown").text(cd);
-      setInterval(updateCountdown, 1);
-    }
-    
+  <script type="text/javascript">    
     $().ready(function() {
-      updateCountdown();
+      countdown(function(ts) {
+        $(".countdown").text(ts.toString());
+      }, new Date(2014, 2, 18));
     });
   </script>
 </head>
