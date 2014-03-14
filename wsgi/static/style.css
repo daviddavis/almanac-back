@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: Arvo, "Time New Roman", Serif;
+  padding-top: 30px;
+}
+p {
+  font-family: Arvo, "Time New Roman", Serif;
+  font-size: 12pt;
+}
+.tiny {
+  font-size: 8pt;
+  font-family: Arial, "Sans-Serif";
+}
+h1.title {
+  font-size: 22pt;
+  font-family: Arvo, Serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+h1.title em {
+  font-weight: 600;
+}
+p.cd-container {
+  font-size: 18pt;
+  margin: 20px auto;
+}
+.blurb {
+  width: 830px;
+  margin: 1em auto;
+  border: 1px solid #aaa;
+  background: #eee;
+  padding: 16px 26px 8px;
+  text-align: justify;
+}
+section p {
+  margin-top: 1em;
+}
+.cover-image {
+  margin: 2em auto;
+}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1 class="title">
+    <em>The Time Traveler's Almanac</em> by Ann and Jeff VanderMeer
+  </h1>
+
+  <p class="cover-image">
+    <img src="{{ url_for('static', filename='tta.jpg') }}" alt="cover" />
+  </p>
+
+  <p class='cd-container'>
+    Coming in <span class="countdown"></span>.
+  </p>
+
+  <div class="blurb">
+    <p>
+      <em>The Time Traveler's Almanac</em> is the largest and most definitive collection
+      of time travel stories ever assembled. Gathered into one volume by
+      intrepid chrononauts and world-renowned anthologists Ann and Jeff
+      VanderMeer, this book compiles more than a century's worth of literary
+      travels into the past and the future that will serve to reacquaint
+      readers with beloved classics of the time travel genre and introduce them
+      to thrilling contemporary innovations.
+    </p>
+  </div>
+
+  <section>
+    <p>
+      See the <a href="https://www.youtube.com/watch?v=eW3ztikOib4">trailer</a>.
+    </p>
+    <p>
+      Buy it at <a href="http://amzn.com/0765374242">Amazon.com</a>.
+    </p>
+  </section>
+
+{% endblock %}
