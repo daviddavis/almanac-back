@@ -97,3 +97,9 @@ section.main {
   color: #428bca;
 }
 
+.twitter {
+  margin-top: 1em;
+}
+.fa-twitter {
+  font-size: 1.2em;
+}
