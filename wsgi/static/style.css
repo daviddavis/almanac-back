@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: Arvo, "Time New Roman", Serif;
-  padding-top: 30px;
+  padding-top: 70px;
 }
 p {
   font-size: 12pt;
@@ -24,7 +24,7 @@ p.cd-container {
   margin: 13px auto;
   float: none;
 }
-.blurb {
+.description {
   float: left;
   border: 1px solid #aaa;
   background: #eee;
@@ -33,7 +33,7 @@ p.cd-container {
   width: 570px;
   margin-left: 20px;
 }
-.blurb p {
+.description p {
   font-size: 11pt;
   font-family: Georgia, "Time New Roman", Serif;
 }
@@ -52,3 +52,45 @@ section.main {
 .clear {
   clear: both;
 }
+
+/* navbar */
+@media (min-width: 1200px) {
+  .container {
+    width: 910px;
+  }
+}
+
+@media (min-width: 768px) {
+  #tor a {
+    padding: 0;
+    margin-top: 2px;
+    width: 33px;
+    height: 44px;
+    background: url(/static/tor_dark.png);
+  }
+  #tor a:hover {
+    background: url(/static/tor.png);
+  }
+}
+/* end navbar */
+
+.blurb {
+  margin: 1em auto;
+  width: 720px;
+}
+.blurb .quote span:before {
+  content: "\201C";
+}
+.blurb .quote span:after {
+  content: "\201D";
+}
+.blurb .quote span {
+  font-size: 1.3em;
+}
+.blurb .quote em:before {
+  content: "\2014";
+}
+.blurb .quote em {
+  font-style: normal;
+}
+
