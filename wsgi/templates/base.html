@@ -8,18 +8,12 @@
   <link href='//fonts.googleapis.com/css?family=Arvo|Merriweather' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-  <script type="text/javascript">    
-    $().ready(function() {
-      var release = new Date(2014, 2, 18);
-      if(release > (new Date())) {
-        countdown(function(ts) {
-          $(".countdown").text(ts.toString());
-        }, release);
-      } else {
-        $(".cd-container").remove();
-      }
-    });
-  </script>
+  <!-- fancybox files -->
+  <link rel="stylesheet" href="/static/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/static/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="/static/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='application.js') }}"></script>
 </head>
 <body>
   {% block content %}{% endblock %}
