@@ -87,10 +87,13 @@ section.main {
 .blurb .quote span {
   font-size: 1.3em;
 }
-.blurb .quote em:before {
+.blurb .quote a:before {
   content: "\2014";
 }
-.blurb .quote em {
-  font-style: normal;
+.blurb .quote a {
+  color: #333;
+}
+.blurb .quote a:hover {
+  color: #428bca;
 }
 
